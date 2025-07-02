@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar / Navbar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Travel In" onerror="this.style.display='none'">
+                <span>Travel In</span>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="menu" id="mobileMenu">
+                <li><span class="icon">🏠</span> Home</li>
+                <li><span class="icon">🧭</span> Tour</li>
+                <li><span class="icon">🎒</span> Package</li>
+                <li><span class="icon">🔍</span> Search</li>
+                <li class="logout"><span class="icon">⎋</span> Logout</li>
+            </ul>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <input type="text" class="search-bar" placeholder="Search Trip...">
+                <button class="book-btn">Book Trip</button>
+            </header>
+            <div class="main-row">
+                <section class="hero">
+                    <img src="assets/image1.png" alt="Hero" class="hero-img" onerror="this.style.display='none'">
+                    <div class="hero-text">
+                        <h1>Rasakan Pengalaman Baru<br>Bersama Travel In!</h1>
+                        <button class="book-trip-main">Book A Trip Now</button>
+                    </div>
+                </section>
+                <aside class="breaking-news">
+                    <h3>Breaking News</h3>
+                    <div class="news-slider">
+                        <img src="assets/image 2.png" alt="Pantai Terbaik" onerror="this.style.display='none'">
+                        <div class="news-caption">
+                            <span>11 Pantai terbaik di Bali</span>
+                            <span class="badge">Read</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <footer class="footer">
+                <span>Contact</span>
+                <span>Made by Agnia Albaitsah</span>
+                <span>Tentang Kami</span>
+            </footer>
+        </main>
+    </div>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.getElementById('mobileMenu');
+      hamburger.addEventListener('click', function() {
+        menu.classList.toggle('show');
+        hamburger.classList.toggle('active');
+      });
+    </script>
+</body>
+</html>
